@@ -1,0 +1,8 @@
+{
+  "name": "Clash of Clans Tactical Simulator",
+  "description": "An interactive Clash of Clans tactical simulator featuring full grid base building, real-time resource gathering, troop training, live battle simulation against AI bases, and AI-powered base audits and matchmaking feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

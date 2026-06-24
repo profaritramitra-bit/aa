@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Custom 16x16 game grid layouts */
+.grid-cols-16 {
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+}
+
+.grid-rows-16 {
+  grid-template-rows: repeat(16, minmax(0, 1fr));
+}
+
+/* High contrast text stroke for battle damage values */
+.text-stroke {
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+/* Slow spin animations for compass dials */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Sleek Grassy Map grid pattern background */
+.grass-map-bg {
+  background-color: #244b1e;
+  background-image: 
+    linear-gradient(#1a3516 1.5px, transparent 1.5px), 
+    linear-gradient(90deg, #1a3516 1.5px, transparent 1.5px),
+    radial-gradient(#1e3b18 4px, transparent 4px);
+  background-size: 40px 40px, 40px 40px, 20px 20px;
+  background-position: 0 0, 0 0, 10px 10px;
+}
+
+/* CoC-style Game Button custom shadows */
+.btn-combat {
+  background: linear-gradient(to bottom, #f05252, #c81e1e);
+  border: 3px solid #541111;
+  box-shadow: 0 5px 0 #541111;
+}
+.btn-combat:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #541111;
+}
+
+.btn-shop {
+  background: linear-gradient(to bottom, #fbbf24, #d97706);
+  border: 3px solid #5c3a10;
+  box-shadow: 0 5px 0 #5c3a10;
+}
+.btn-shop:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #5c3a10;
+}
+
+.btn-upgrade {
+  background: linear-gradient(to bottom, #10b981, #047857);
+  border: 3px solid #064e3b;
+  box-shadow: 0 5px 0 #064e3b;
+}
+.btn-upgrade:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #064e3b;
+}
+
+.btn-secondary-sleek {
+  background: linear-gradient(to bottom, #374151, #1f2937);
+  border: 2px solid #111827;
+  box-shadow: 0 3px 0 #111827;
+}
+.btn-secondary-sleek:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #111827;
+}
+
+
